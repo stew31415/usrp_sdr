@@ -305,6 +305,7 @@ def main_loop(tb):
             noise_floor_db = 10*math.log10(min(m.data)/tb.usrp_rate)
             power_db = 10*math.log10(m.data[i_bin]/tb.usrp_rate) - noise_floor_db
 
+#======================= Edit here to change file that data is put into ===============================
             if (power_db > tb.squelch_threshold) and (freq >= tb.min_freq) and (freq <= tb.max_freq):
                 open_text = open("usrp_data.txt", "a+")
                 open_text.write(str(datetime.now()) + " " + str(freq) + " " + str(power_db) + "\n")
