@@ -1,4 +1,6 @@
 # usrp_sdr
+This project was done under the NCSSM Mentorship Program in the UNC Physics Department's ENAP group, advised by Sam Meijer, Tom Gilliss, and John Wilkerson.
+
 This project is used to analyze, in real time, wideband scan using USRP. Builds upon usrp_spectrum_sense.py from https://github.com/gnuradio/gnuradio/blob/master/gr-uhd/examples/python/usrp_spectrum_sense.py
 
 usrp_spectrum_sense_output.py: Minor change has the original program output data to a .txt file. User can specify name of file in code (file name assignement is near bottom of code).
